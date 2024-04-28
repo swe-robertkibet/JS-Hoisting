@@ -9,7 +9,7 @@ This means that regardless of where variables and functions are declared within 
 
 ## 1. Variable Hoisting
 
-When you declare a variable using var, let, or const, the declaration is hoisted to the top of its scope. 
+When you declare a variable using *var*, *let*, or *const*, the declaration is hoisted to the top of its scope. 
 However, the initialization remains in place. 
 
 For example:
