@@ -7,7 +7,7 @@ This means that regardless of where variables and functions are declared within 
 **NB:** Only the declarations are hoisted, not the initializations. 
 
 
-## Variable Hoisting
+## 1. Variable Hoisting
 
 When you declare a variable using var, let, or const, the declaration is hoisted to the top of its scope. 
 However, the initialization remains in place. 
@@ -24,7 +24,7 @@ console.log(x); // undefined
 x = 5;
 ```
 
-## Function Hoisting
+## 2. Function Hoisting
 Function declarations are also hoisted to the top of their scope. 
 
 For example:
@@ -46,7 +46,7 @@ function foo() {
 foo(); // "Hello, I'm foo!"
 ```
 
-## Function Expressions
+## 3. Function Expressions
 Function expressions are not hoisted in the same way as function declarations. 
 Only the variable declaration gets hoisted, not the function definition. 
 For example:
