@@ -67,3 +67,5 @@ bar = function() {
 };
 
 ```
+
+*Relying too much on hoisting attracts bugs*
