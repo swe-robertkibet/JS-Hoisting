@@ -13,12 +13,12 @@ When you declare a variable using *var*, *let*, or *const*, the declaration is h
 However, the initialization remains in place. 
 
 For example:
-```
+```javascript
 console.log(x); // undefined
 var x = 5;
 ```
 This code behaves as if it were interpreted like this:
-```
+```javascript
 var x;
 console.log(x); // undefined
 x = 5;
@@ -29,7 +29,7 @@ Function declarations are also hoisted to the top of their scope.
 
 For example:
 
-```
+```javascript
 foo(); // "Hello, I'm foo!"
 
 function foo() {
@@ -38,7 +38,7 @@ function foo() {
 ```
 
 This code behaves as if it were interpreted like this:
-```
+```javascript
 function foo() {
     console.log("Hello, I'm foo!");
 }
@@ -50,7 +50,7 @@ foo(); // "Hello, I'm foo!"
 Function expressions are not hoisted in the same way as function declarations. 
 Only the variable declaration gets hoisted, not the function definition. 
 For example:
-```
+```javascript
 bar(); // TypeError: bar is not a function
 
 var bar = function() {
@@ -58,7 +58,7 @@ var bar = function() {
 };
 ```
 This code behaves as if it were interpreted like this:
-```
+```javascript
 var bar;
 bar(); // TypeError: bar is not a function
 
